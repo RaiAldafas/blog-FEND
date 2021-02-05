@@ -1,0 +1,92 @@
+.container__main {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.post-card1 {
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.post-image1 {
+    height: 430px;
+    width: 380px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+
+.post-info1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.post-title1 {
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1.5rem;
+}
+
+
+.post-content1 {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 1rem;
+}
+
+
+#a {
+    background-color: white;
+    font-size: 18px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    quotes: "«""»";
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 1.5rem;
+}
+
+
+@media (max-width: 767px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 1500px 200px 200px;
+        grid-template-areas:
+            "header"
+            "main"
+            "aside"
+            "footer";
+    }
+
+    .container__main1 {
+        flex-direction: column;
+    }
+
+    .post-card1 {
+        flex-direction: column;
+    }
+
+    .post-image1 {
+        width: 100%;
+    }
+}
